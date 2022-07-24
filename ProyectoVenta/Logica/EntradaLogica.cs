@@ -90,20 +90,17 @@ namespace ProyectoVenta.Logica
 
                     foreach (DetalleEntrada de in obj.olistaDetalle)
                     {
-                        query.AppendLine(string.Format("insert into DETALLE_ENTRADA(IdEntrada,IdProducto,CodigoProducto,DescripcionProducto,CategoriaProducto,AlmacenProducto,PrecioCompra,PrecioVenta,Cantidad,SubTotal) values({0},{1},'{2}','{3}','{4}','{5}','{6}','{7}',{8},'{9}');",
+                        query.AppendLine(string.Format("insert into DETALLE_ENTRADA(IdEntrada,IdProducto,CodigoProducto,DescripcionProducto,CategoriaProducto,AlmacenProducto,Cantidad) values({0},{1},'{2}','{3}','{4}','{5}','{6}','{7}',{8},'{9}');",
                             "(select id from _TEMP)",
                             de.IdProducto,
                             de.CodigoProducto,
                             de.DescripcionProducto,
                             de.CategoriaProducto,
                             de.AlmacenProducto,
-                            de.PrecioCompra,
-                            de.PrecioVenta,
-                            de.Cantidad,
-                            de.SubTotal
+                            de.Cantidad
                             ));
 
-                        query.AppendLine(string.Format("UPDATE PRODUCTO set PrecioCompra = '{0}', PrecioVenta = '{1}', Stock = (Stock + {2}) where IdProducto = {3};",de.PrecioCompra,de.PrecioVenta,de.Cantidad,de.IdProducto));
+                        query.AppendLine(string.Format("UPDATE PRODUCTO set PrecioCompra = '{0}', PrecioVenta = '{1}', Stock = (Stock + {2}) where IdProducto = {3};",de.Cantidad,de.IdProducto));
                     }
 
                     query.AppendLine("DROP TABLE _TEMP;");
@@ -147,8 +144,8 @@ namespace ProyectoVenta.Logica
 
                     query.AppendLine("select e.NumeroDocumento,strftime('%d/%m/%Y', date(e.FechaRegistro))[FechaRegistro],e.UsuarioRegistro,");
                     query.AppendLine("e.DocumentoProveedor,e.NombreProveedor,e.MontoTotal,");
-                    query.AppendLine("de.CodigoProducto,de.DescripcionProducto,de.CategoriaProducto,de.AlmacenProducto,de.PrecioCompra,");
-                    query.AppendLine("de.PrecioVenta,de.Cantidad,de.SubTotal");
+                    query.AppendLine("de.CodigoProducto,de.DescripcionProducto,de.CategoriaProducto,de.AlmacenProducto,");
+                    query.AppendLine("de.Cantidad");
                     query.AppendLine("from ENTRADA e");
                     query.AppendLine("inner join DETALLE_ENTRADA de on e.IdEntrada = de.IdEntrada");
                     query.AppendLine("where DATE(e.FechaRegistro) BETWEEN DATE(@pfechainicio) AND DATE(@pfechafin)");
@@ -174,10 +171,7 @@ namespace ProyectoVenta.Logica
                                 DescripcionProducto = dr["DescripcionProducto"].ToString(),
                                 CategoriaProducto = dr["CategoriaProducto"].ToString(),
                                 AlmacenProducto = dr["AlmacenProducto"].ToString(),
-                                PrecioCompra = dr["PrecioCompra"].ToString(),
-                                PrecioVenta = dr["PrecioVenta"].ToString(),
-                                Cantidad = dr["Cantidad"].ToString(),
-                                SubTotal = dr["SubTotal"].ToString()
+                                Cantidad = dr["Cantidad"].ToString()
                             });
                         }
                     }
@@ -202,7 +196,7 @@ namespace ProyectoVenta.Logica
                     conexion.Open();
                     StringBuilder query = new StringBuilder();
                     query.AppendLine("select IdEntrada,NumeroDocumento, strftime('%d/%m/%Y', date(FechaRegistro))[FechaRegistro],UsuarioRegistro,DocumentoProveedor,");
-                    query.AppendLine("NombreProveedor,CantidadProductos,MontoTotal from ENTRADA");
+                    query.AppendLine("NombreProveedor from ENTRADA");
                     query.AppendLine("where NumeroDocumento = @pnumero");
 
                     SQLiteCommand cmd = new SQLiteCommand(query.ToString(), conexion);
@@ -264,10 +258,7 @@ namespace ProyectoVenta.Logica
                                 DescripcionProducto = dr["DescripcionProducto"].ToString(),
                                 CategoriaProducto = dr["CategoriaProducto"].ToString(),
                                 AlmacenProducto = dr["AlmacenProducto"].ToString(),
-                                PrecioCompra = dr["PrecioCompra"].ToString(),
-                                PrecioVenta = dr["PrecioVenta"].ToString(),
-                                Cantidad = Convert.ToInt32(dr["Cantidad"].ToString()),
-                                SubTotal = dr["SubTotal"].ToString()
+                                Cantidad = Convert.ToInt32(dr["Cantidad"].ToString())
                             });
                         }
                     }

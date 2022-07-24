@@ -15,9 +15,6 @@ namespace ProyectoVenta.Modelo
         public string DescripcionProducto { get; set; }
         public string CategoriaProducto { get; set; }
         public string AlmacenProducto { get; set; }
-        public string PrecioCompra { get; set; }
-        public string PrecioVenta { get; set; }
         public int Cantidad { get; set; }
-        public string SubTotal { get; set; }
     }
 }

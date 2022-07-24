@@ -96,7 +96,6 @@
             this.chkocultarprecios.TabIndex = 5;
             this.chkocultarprecios.Text = "Ocultar Precios";
             this.chkocultarprecios.UseVisualStyleBackColor = false;
-            this.chkocultarprecios.CheckedChanged += new System.EventHandler(this.chkocultarprecios_CheckedChanged);
             // 
             // dgvdata
             // 
@@ -117,10 +116,7 @@
             this.Descripcion,
             this.Categoria,
             this.Almacen,
-            this.Cantidad,
-            this.PrecioCompra,
-            this.PrecioVenta,
-            this.SubTotal});
+            this.Cantidad});
             this.dgvdata.Location = new System.Drawing.Point(24, 205);
             this.dgvdata.MultiSelect = false;
             this.dgvdata.Name = "dgvdata";
@@ -173,31 +169,6 @@
             this.Cantidad.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Cantidad.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             this.Cantidad.Width = 70;
-            // 
-            // PrecioCompra
-            // 
-            this.PrecioCompra.HeaderText = "Precio Compra";
-            this.PrecioCompra.Name = "PrecioCompra";
-            this.PrecioCompra.ReadOnly = true;
-            this.PrecioCompra.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.PrecioCompra.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // PrecioVenta
-            // 
-            this.PrecioVenta.HeaderText = "Precio Venta";
-            this.PrecioVenta.Name = "PrecioVenta";
-            this.PrecioVenta.ReadOnly = true;
-            this.PrecioVenta.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.PrecioVenta.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            // 
-            // SubTotal
-            // 
-            this.SubTotal.HeaderText = "Sub Total";
-            this.SubTotal.Name = "SubTotal";
-            this.SubTotal.ReadOnly = true;
-            this.SubTotal.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.SubTotal.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.SubTotal.Width = 80;
             // 
             // groupBox1
             // 

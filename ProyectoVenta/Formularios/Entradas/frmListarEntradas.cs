@@ -62,10 +62,7 @@ namespace ProyectoVenta.Formularios.Entradas
                     vr.DescripcionProducto,
                     vr.CategoriaProducto,
                     vr.AlmacenProducto,
-                    vr.PrecioCompra,
-                    vr.PrecioVenta,
-                    vr.Cantidad,
-                    vr.SubTotal
+                    vr.Cantidad
                 });
             }
         }
@@ -122,9 +119,7 @@ namespace ProyectoVenta.Formularios.Entradas
                         row.Cells[7].Value.ToString(),
                         row.Cells[8].Value.ToString(),
                         row.Cells[9].Value.ToString(),
-                        row.Cells[10].Value.ToString(),
-                        row.Cells[11].Value.ToString(),
-                        row.Cells[12].Value.ToString()
+                        row.Cells[10].Value.ToString()
                     });
                 }
 
@@ -149,6 +144,11 @@ namespace ProyectoVenta.Formularios.Entradas
 
 
             }
+        }
+
+        private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

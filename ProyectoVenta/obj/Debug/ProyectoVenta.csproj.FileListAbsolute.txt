@@ -137,3 +137,66 @@ D:\WorkSpaceAD\YOUTUBE\037_PUNTO VENTA SENCILLO\SistemaInventario\ProyectoVenta\
 C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\CE Inventario Libre.exe.config
 C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\CE Inventario Libre.exe
 C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\CE Inventario Libre.pdb
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\BDINVENTARIO.db
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\CE Inventario Libre.exe
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\CE Inventario Libre.pdb
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\BarcodeLib.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\ClosedXML.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\DocumentFormat.OpenXml.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\EntityFramework.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\ExcelNumberFormat.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\itextsharp.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\itextsharp.xmlworker.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\NPOI.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\NPOI.OOXML.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\NPOI.OpenXml4Net.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\NPOI.OpenXmlFormats.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\System.Data.SQLite.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\System.IO.FileSystem.Primitives.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\System.IO.Packaging.dll
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\ClosedXML.pdb
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\ClosedXML.xml
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\DocumentFormat.OpenXml.xml
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\EntityFramework.xml
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\ExcelNumberFormat.xml
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\ICSharpCode.SharpZipLib.pdb
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\ICSharpCode.SharpZipLib.xml
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\itextsharp.xml
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\NPOI.xml
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\NPOI.OOXML.xml
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\bin\Debug\System.Data.SQLite.xml
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.csprojResolveAssemblyReference.cache
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Clientes.frmClientes.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Configuracion.frmConfiguracion.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Entradas.frmDetalleEntrada.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Entradas.frmListarEntradas.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Entradas.frmRegistrarEntrada.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.frmLogin.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Inventario.frmInventario.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Permisos.frmPermisos.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Productos.frmCargarProducto.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.frmRegistrarProducto.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Inicio.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Proveedores.frmProveedores.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Salidas.frmDetalleSalida.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Salidas.frmListarSalidas.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Salidas.frmRegistrarSalida.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Formularios.Usuarios.frmUsuarios.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Intermedios.IConfiguracion.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Intermedios.IEntradas.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Intermedios.IProductos.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Intermedios.ISalidas.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Modales.mdAcercade.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Modales.mdClientes.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Modales.mdProductos.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Modales.mdProveedores.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Modales.mdSalidaExitosa.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.Properties.Resources.resources
+C:\Users\jella\Documents\proyecto reinaldo\037_PROYECTO_SISTEMA_INVENTARIO\SistemaInventario\ProyectoVenta\obj\Debug\ProyectoVenta.csproj.GenerateResource.Cache

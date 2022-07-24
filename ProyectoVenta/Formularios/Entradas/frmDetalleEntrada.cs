@@ -53,7 +53,7 @@ namespace ProyectoVenta.Formularios.Entradas
                 List<DetalleEntrada> olista = EntradaLogica.Instancia.ListarDetalle(obj.IdEntrada);
                 dgvdata.Rows.Clear();
                 foreach(DetalleEntrada de in olista) {
-                    dgvdata.Rows.Add(new object[] {de.CodigoProducto,de.DescripcionProducto,de.CategoriaProducto,de.AlmacenProducto,de.Cantidad,de.PrecioCompra,de.PrecioVenta,de.SubTotal });
+                    dgvdata.Rows.Add(new object[] {de.CodigoProducto,de.DescripcionProducto,de.CategoriaProducto,de.AlmacenProducto,de.Cantidad });
                 }
 
                 lbltotal.Text = obj.MontoTotal;
@@ -62,27 +62,6 @@ namespace ProyectoVenta.Formularios.Entradas
                 limpiar();
                 MessageBox.Show("No se encontraron resultados", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 txtnumerodocumento.Focus();
-            }
-        }
-
-        private void chkocultarprecios_CheckedChanged(object sender, EventArgs e)
-        {
-            if (chkocultarprecios.Checked)
-            {
-                dgvdata.Columns["PrecioCompra"].Visible = false;
-                dgvdata.Columns["PrecioVenta"].Visible = false;
-                dgvdata.Columns["SubTotal"].Visible = false;
-
-                lbltextototal.Visible = false;
-                lbltotal.Visible = false;
-            }
-            else {
-                dgvdata.Columns["PrecioCompra"].Visible = true;
-                dgvdata.Columns["PrecioVenta"].Visible = true;
-                dgvdata.Columns["SubTotal"].Visible = true;
-
-                lbltextototal.Visible = true;
-                lbltotal.Visible = true;
             }
         }
 

@@ -65,8 +65,6 @@ namespace ProyectoVenta.Formularios.Entradas
                     txtdescripcionproducto.Text = form._descripcion;
                     _categoria = form._categoria;
                     _almacen = form._almacen;
-
-                    txtpreciocompra.Focus();
                 }
             }
         }
@@ -90,58 +88,6 @@ namespace ProyectoVenta.Formularios.Entradas
             }
         }
 
-        private void txtpreciocompra_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                if (txtpreciocompra.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
-                {
-                    e.Handled = true;
-                }
-                else
-                {
-                    if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
-                    {
-                        e.Handled = false;
-                    }
-                    else
-                    {
-                        e.Handled = true;
-                    }
-                }
-            }
-        }
-
-        private void txtprecioventa_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (Char.IsDigit(e.KeyChar))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                if (txtprecioventa.Text.Trim().Length == 0 && e.KeyChar.ToString() == ".")
-                {
-                    e.Handled = true;
-                }
-                else
-                {
-                    if (Char.IsControl(e.KeyChar) || e.KeyChar.ToString() == ".")
-                    {
-                        e.Handled = false;
-                    }
-                    else
-                    {
-                        e.Handled = true;
-                    }
-                }
-            }
-        }
-
         private void txtcodigoproducto_KeyDown(object sender, KeyEventArgs e)
         {
             string mensaje = string.Empty;
@@ -156,8 +102,6 @@ namespace ProyectoVenta.Formularios.Entradas
                     _idproducto = Convert.ToInt32(pr.IdProducto.ToString());
                     _categoria = pr.Categoria;
                     _almacen = pr.Almacen;
-
-                    txtpreciocompra.Focus();
                 }
                 else {
                     txtcodigoproducto.BackColor = Color.MistyRose;
@@ -178,55 +122,23 @@ namespace ProyectoVenta.Formularios.Entradas
                 MessageBox.Show("Debe ingresar el codigo de producto", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            if (txtpreciocompra.Text.Trim() == "")
-            {
-                MessageBox.Show("Debe ingresar el precio de compra", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
-            if (txtprecioventa.Text.Trim() == "")
-            {
-                MessageBox.Show("Debe ingresar el precio de venta", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                return;
-            }
 
             if (producto_agregado()) {
 
                 MessageBox.Show("El producto ya está agregado", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 return;
             }
-            
 
-            decimal preciocompra = 0;
-            decimal precioventa = 0;
-            decimal subtotal = 0;
 
-            if (!decimal.TryParse(txtpreciocompra.Text, out preciocompra)) {
-                MessageBox.Show("Error al convertir el tipo de moneda - Precio Compra\nEjemplo Formato ##.##", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtpreciocompra.Focus();
-                return;
-            }
-
-            if (!decimal.TryParse(txtprecioventa.Text, out precioventa))
-            {
-                MessageBox.Show("Error al convertir el tipo de moneda - Precio Venta\nEjemplo Formato ##.##", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                txtprecioventa.Focus();
-                return;
-            }
-
-            subtotal = Convert.ToDecimal(txtcantidad.Value.ToString()) * Convert.ToDecimal(txtpreciocompra.Text);
             dgvdata.Rows.Add(new object[] {"",
                 _idproducto.ToString(),
                 txtcodigoproducto.Text,
                 txtdescripcionproducto.Text,
                 _categoria,
                 _almacen,
-                Convert.ToDecimal(txtprecioventa.Text).ToString("0.00"),
-                preciocompra.ToString("0.00"),
-                txtcantidad.Value.ToString(),
-                subtotal.ToString("0.00")
+                txtcantidad.Value.ToString()
             });
-
-            calcularTotal();
+            
 
             _idproducto = 0;
             txtcodigoproducto.Text = "";
@@ -234,8 +146,6 @@ namespace ProyectoVenta.Formularios.Entradas
             txtdescripcionproducto.Text = "";
             _categoria = "";
             _almacen = "";
-            txtpreciocompra.Text = "";
-            txtprecioventa.Text = "";
             txtcantidad.Value = 0;
             txtcodigoproducto.Focus();
         }
@@ -276,19 +186,6 @@ namespace ProyectoVenta.Formularios.Entradas
             return respuesta;
         }
 
-        private void calcularTotal()
-        {
-            decimal total = 0;
-            if (dgvdata.Rows.Count > 0)
-            {
-                foreach (DataGridViewRow row in dgvdata.Rows)
-                {
-                    total += Convert.ToDecimal(row.Cells["SubTotal"].Value.ToString());
-                }
-            }
-            lbltotal.Text = total.ToString("0.00");
-        }
-
         private void dgvdata_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             int index = e.RowIndex;
@@ -297,7 +194,6 @@ namespace ProyectoVenta.Formularios.Entradas
                 if (dgvdata.Columns[e.ColumnIndex].Name == "btneliminar")
                 {
                     dgvdata.Rows.RemoveAt(index);
-                    calcularTotal();
                 }
             }
         }
@@ -342,10 +238,7 @@ namespace ProyectoVenta.Formularios.Entradas
                     DescripcionProducto = row.Cells["Descripcion"].Value.ToString(),
                     CategoriaProducto = row.Cells["Categoria"].Value.ToString(),
                     AlmacenProducto = row.Cells["Almacen"].Value.ToString(),
-                    PrecioVenta = row.Cells["PrecioVenta"].Value.ToString(),
-                    PrecioCompra = row.Cells["PrecioCompra"].Value.ToString(),
                     Cantidad = Convert.ToInt32(row.Cells["Cantidad"].Value.ToString()),
-                    SubTotal = row.Cells["SubTotal"].Value.ToString()
                 });
 
                 cantidad_productos += Convert.ToInt32(row.Cells["Cantidad"].Value.ToString());
@@ -358,7 +251,6 @@ namespace ProyectoVenta.Formularios.Entradas
                 DocumentoProveedor = txtdocproveedor.Text,
                 NombreProveedor = txtnomproveedor.Text,
                 CantidadProductos = cantidad_productos,
-                MontoTotal = lbltotal.Text,
                 olistaDetalle = olista
             };
            
